@@ -273,7 +273,7 @@ class SiteSettingsForm extends FormBase {
       ];
     }
 
-    SettingsEditor::rewrite($this->sitePath . '/settings.php', $settings);
+    SettingsEditor::rewrite($this->sitePath . '/settings.local.php', $settings);
 
     // Indicate that the settings file has been verified, and check the database
     // for the last completed task, now that we have a valid connection. This
